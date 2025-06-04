@@ -1,0 +1,366 @@
+/* src/components/globals.css */
+
+/*— Import Roboto from Google Fonts —*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/*— 1) Root variables for your palette —*/
+:root {
+  --color-night: #0d160b; /* darkest accent (e.g. headers, text) */
+  --color-white: #ffffff; /* primary page background */
+  --color-light: #aed9e0; /* soft teal for sections or cards */
+  --color-rose: rgba(
+    242,
+    194,
+    196,
+    0.9
+  ); /* very light rose accent, 10% transparent */
+  --color-brown: rgba(
+    216,
+    193,
+    184,
+    0.9
+  ); /* pale, warm brown accent, 10% transparent */
+  --color-navbar: #9cc0c5; /* NEW: light-mode navbar background */
+
+  --text-light: var(--color-white);
+  --text-dark: var(--color-night);
+}
+
+/*— 2) Reset some defaults —*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*— 3) Global typography settings —*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Blur the background image using a pseudo-element overlay */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: inherit;
+  background-repeat: inherit;
+  background-size: inherit;
+  filter: blur(90px);
+  pointer-events: none;
+  transition: filter 0.5s ease, background-color 0.5s ease;
+}
+
+/*— 4) Utility classes —*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/*— 5) Hero section —*/
+.hero-section {
+  padding: 4rem 0;
+  text-align: center;
+  background-image: url("../assets/Screenshot 2025-06-04 223844.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #aed9e0;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: #aed9e0;
+}
+
+.container hero-section {
+  margin-top: 105px;
+}
+
+/*— 6) Zigzag Section —*/
+.zigzag {
+  display: flex;
+  align-items: stretch;
+}
+
+.zigzag.reverse {
+  flex-direction: row-reverse;
+}
+
+.zigzag .text-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.zigzag .text-col .section-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.zigzag .text-col .section-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+  width: 100%;
+}
+
+.zigzag .image-col {
+  width: 50%;
+  /* Remove align-items: center; justify-content: center */
+  /* We want the img to fill its parent’s full height */
+  display: flex;
+  /* no need for justify-content or align-items here */
+}
+
+.zigzag .image-col img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover; /* crop image to fill the area without distortion */
+  display: block;
+}
+
+/*— 7) Section background stripes (odd/even) —*/
+.section-bg-odd {
+  background-color: var(--color-brown);
+}
+
+.section-bg-even {
+  background-color: var(--color-rose);
+}
+
+.section-bg-odd .zigzag .text-col {
+  padding-right: 30px;
+}
+
+.section-bg-even .zigzag .text-col {
+  padding-left: 30px;
+}
+
+/*— 8) Footer styling —*/
+footer {
+  background-color: var(--color-night);
+  color: var(--text-light);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/*— 9) Links, buttons, etc. —*/
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-rose);
+}
+
+/*— 10) NAVBAR (new) —*/
+.navbar {
+  background-color: var(--color-navbar);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.navbar .nav-container {
+  display: flex;
+  justify-content: space-between; /* logo left / links center-right / toggle button right */
+  align-items: center;
+}
+
+/* The UL with navigation links */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: color 0.2s;
+}
+
+.nav-list li a:hover {
+  color: var(--color-rose);
+}
+
+/* NAVBAR on mobile: wrap and center if items wrap onto multiple lines */
+@media (max-width: 1000px) {
+  .navbar .nav-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/*— 11) Other sections (e.g. hero, zigzag) are above —*/
+
+/*— 12) Responsive: stack on small screens —*/
+@media (max-width: 1000px) {
+  main,
+  body,
+  #root {
+    padding: 0 1rem;
+  }
+  /* Zigzag: stack vertically */
+  .zigzag {
+    flex-direction: column !important;
+  }
+
+  .zigzag .text-col,
+  .zigzag .image-col {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/*— 13) Prevent viewport shrinking below 450px —*/
+html,
+body,
+#root {
+  min-width: 450px;
+}
+
+/*— 14) Smooth scrolling for in-page links —*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*— Dark-Mode Overrides: simply swap all variables to their “opposite” —*/
+.dark-mode {
+  --color-night: #e8f0ef; /* flip of #0d160b → very pale teal-white */
+  --color-white: #0d160b; /* flip of #ffffff → deep dark background */
+  --color-light: #354a4c; /* dark teal-gray for sections */
+  --color-rose: rgba(
+    91,
+    58,
+    60,
+    0.9
+  ); /* muted dark rose for buttons/links, 10% transparent */
+  --color-brown: rgba(
+    78,
+    68,
+    66,
+    0.9
+  ); /* rich dark brown for accents, 10% transparent */
+  --color-navbar: #2b3b3c; /* NEW: dark-mode navbar background */
+
+  --text-light: var(--color-white);
+  --text-dark: var(--color-night);
+}
+
+/*— Additional styling for the “Light / Dark” toggle button —*/
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--text-dark);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Light‐mode hover: use pale-rose background, dark text */
+.theme-toggle:hover {
+  background-color: var(--color-rose);
+  color: var(--text-dark);
+}
+
+/* Dark‐mode default: keep border/text in the light (≈white) tone */
+.dark-mode .theme-toggle {
+  border-color: var(--text-dark);
+  color: var(--text-dark);
+}
+
+/* Dark‐mode hover: use the muted dark-rose for bg, and light text */
+.dark-mode .theme-toggle:hover {
+  background-color: var(--color-rose);
+  color: var(--text-dark);
+}
+
+.theme-toggle-switch {
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: var(--text-dark);
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-switch .icon {
+  position: absolute;
+  left: 5px;
+  font-size: 1rem;
+  transition: left 0.4s ease, transform 0.4s ease;
+}
+
+.theme-toggle-switch.dark .icon {
+  left: 35px;
+  transform: rotate(-10deg);
+}
+
+.theme-toggle-switch.light {
+  background-color: var(--color-rose);
+}
+
+.theme-toggle-switch.dark {
+  background-color: var(--color-brown);
+}
+
+.logo {
+  height: 1vh;
+}
+
+/* Smooth theme transition */
+body,
+.navbar,
+.hero-section,
+footer,
+.zigzag,
+.zigzag .text-col,
+.zigzag .image-col,
+.section-bg-odd,
+.section-bg-even,
+.theme-toggle {
+  transition: background-color 0.5s ease, color 0.5s ease,
+    border-color 0.5s ease;
+}
