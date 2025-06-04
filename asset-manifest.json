@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SurvivalGuideLU/static/css/main.c437b4b0.css",
+    "main.js": "/SurvivalGuideLU/static/js/main.93f9147c.js",
+    "static/media/Screenshot 2025-06-04 223844.png": "/SurvivalGuideLU/static/media/Screenshot 2025-06-04 223844.4b5118adc0e31602cb7c.png",
+    "static/media/lu.png": "/SurvivalGuideLU/static/media/lu.b6ede9064a06903d7b10.png",
+    "static/media/VSCODE.png": "/SurvivalGuideLU/static/media/VSCODE.6b185c47955ac0f81f74.png",
+    "static/media/forest-app.jpg": "/SurvivalGuideLU/static/media/forest-app.a0fa8f58c02abadb61f9.jpg",
+    "static/media/EZTF_light.png": "/SurvivalGuideLU/static/media/EZTF_light.19b6ce0c125745bbd375.png",
+    "static/media/EZTF_dark.png": "/SurvivalGuideLU/static/media/EZTF_dark.5613d4e971a592cd36ec.png",
+    "static/media/learning-interactions.png": "/SurvivalGuideLU/static/media/learning-interactions.d9585d3d44375e6c6955.png",
+    "static/media/learning.png": "/SurvivalGuideLU/static/media/learning.064739dfa129df0adeb3.png",
+    "static/media/google.webp": "/SurvivalGuideLU/static/media/google.7696a2a4f22323437919.webp",
+    "index.html": "/SurvivalGuideLU/index.html",
+    "main.c437b4b0.css.map": "/SurvivalGuideLU/static/css/main.c437b4b0.css.map",
+    "main.93f9147c.js.map": "/SurvivalGuideLU/static/js/main.93f9147c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c437b4b0.css",
+    "static/js/main.93f9147c.js"
+  ]
+}
