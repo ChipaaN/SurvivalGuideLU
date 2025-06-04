@@ -140,10 +140,12 @@ body::before {
 
 /*— 7) Section background stripes (odd/even) —*/
 .section-bg-odd {
+  width: 100%;
   background-color: var(--color-brown);
 }
 
 .section-bg-even {
+  width: 100%;
   background-color: var(--color-rose);
 }
 
@@ -232,7 +234,7 @@ a:hover {
   main,
   body,
   #root {
-    padding: 0 1rem;
+    padding: 0;
   }
   /* Zigzag: stack vertically */
   .zigzag {
@@ -256,6 +258,13 @@ a:hover {
 
   .section-bg-even .zigzag .text-col {
     padding-left: 0px;
+  }
+  .section-bg-odd {
+    width: 100%;
+  }
+
+  .section-bg-even {
+    width: 100%;
   }
 }
 
