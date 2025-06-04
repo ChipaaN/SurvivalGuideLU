@@ -39,7 +39,7 @@ const sections = [
   {
     id: "online-learning",
     title: "Tiešsaistes mācības un sadarbība",
-    text: `Attālinātajām studijām izvēlies piemērotu video sapulču platformu: Zoom nodrošina grupu telpas (Breakout Rooms) un ierakstīšanu, Teams integrējas ar Office 365 un ļauj koplietot dokumentus, bet Meet darbojas pārlūkā bez instalācijām. Reāllaika dokumentu sadarbībai izmanto Google Docs/Sheets/Slides – visi redz izmaiņas nekavējoties un var pievienot komentārus. Komunikācijai izmanto Slack vai Discord, kur tērzēt pa tēmām, kopīgot failus un koplietot ekrānu.`,
+    text: `Attālinātajām studijām izvēlies piemērotu video sapulču platformu: Zoom nodrošina grupu telpas (Breakout Rooms) un ierakstīšanu, Teams integrējas ar Office 365 un ļauj koplietot dokumentus, bet Meet darbojas pārlūkā bez instalācijām. Reāllaika dokumentu sadarbībai izmanto Google Docs/Sheets/Slides – visi redz izmaiņas nekavējoties un var pievienot komentārus. Komunikācijai izmanto Slack vai Discord, kur tērzēt par tēmām, dalīties ar failiem un koplietot ekrānu.`,
     imgSrc: image1,
     imgAlt: "Attēls par tiešsaistes mācībām",
   },
