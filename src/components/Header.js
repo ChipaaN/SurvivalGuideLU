@@ -76,7 +76,12 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Hero Section is now separate in App.js */}
+      <section className="hero-section" id="intro">
+        <div className="container hero-container">
+          <h1>Studenta digitālās izdzīvošanas ceļvedis</h1>
+          <p>Ralfs Čipāns, rc22007</p>
+        </div>
+      </section>
     </>
   );
 };
