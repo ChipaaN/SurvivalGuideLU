@@ -10,7 +10,9 @@ const sections = [
   {
     id: "intro",
     title: "Ievada sadaļa",
-    text: `Laipni lūdzam “Studenta digitālās izdzīvošanas ceļvedī” – īsā rokasgrāmatā, kas palīdzēs tev izmantot digitālos rīkus studijās. Šeit apskatīsim piecas galvenās tēmas: mācību rīkus, programmēšanu, produktivitāti, attālinātās mācības un papildu resursus. Katrā sadaļā sniegsim praktiskus padomus, lai tu varētu organizēt piezīmes, plānot laiku, apgūt kodēšanu un sadarboties tiešsaistē. Ceļvedis ir domāts gan iesācējiem, gan tiem, kas jau izmanto dažādus rīkus, bet vēlas tos izmantot efektīvāk. Sāc iepazīt šīs tēmas, lai studijas kļūtu strukturētākas un patīkamākas.`,
+    text: `Atceros savu pirmo semestra lekciju – sēdēju ar piezīmju burtnīcu rokās un pilnīgā haosā ķēros pie Google Docs. Dažkārt aizmirsu, kur saglabāju svarīgāko informāciju, līdz sapratu, ka man nepieciešama skaidra darba plūsma.  
+    
+Šajā ceļvedī dalīšos ar personīgi pārbaudītiem paņēmieniem un rīkiem, kas palīdzēs tev organizēt piezīmes, plānot laiku, apgūt programmēšanu un sadarboties tiešsaistē. Apskatīsim piecas svarīgas tēmas un īstus piemērus, kā studijas padarīt efektīvākas un patīkamākas.`,
     imgSrc: image5,
     imgAlt: "Ievada sadaļas attēls",
   },
@@ -18,43 +20,47 @@ const sections = [
   {
     id: "tools",
     title: "Galvenie mācību rīki",
-    text: `Lai organizētu piezīmes un materiālus, izmanto Google Workspace – Google Docs ļauj strādāt komandā reāllaikā, Sheets apkopo datus un Slides veido prezentācijas. Ja vēlies brīvāku piezīmju struktūru, izvēlies OneNote, kur vari veidot sadaļas, pievienot rokraksta piezīmes un audio ierakstus. Notion apvieno piezīmes, uzdevumu sarakstus un datubāzes vienā vidē, ļaujot izveidot pielāgotas veidnes. Bibliogrāfijām lieto Zotero vai Mendeley, kas automātiski ģenerē citātus un pārvalda atsauces.`,
+    text: `Kad man vajadzēja sakārtot piezīmes, sāku ar Google Docs – vienmēr ir ērti koplietot dokumentus ar kursa biedriem un rediģēt tiešsaistē. OneNote izmantoju, lai zīmētu diagrammas un ierakstītu audio piezīmes; sadaļas ļauj ātri atrast iepriekšējās idejas. Notion kalpo kā visa veida datubāze: rokraksta piezīmes, to-do saraksti un atsauces vienuviet. Atsauču pārvaldībai iesaku Zotero vai Mendeley – automātiski ģenerēts citāts un vienkārša bibliogrāfija ietaupa daudz laika.`,
     imgSrc: image2,
     imgAlt: "Attēls par mācību rīkiem",
   },
+
   {
     id: "programming",
     title: "Programmēšana un izstrāde",
-    text: `Programmēšana attīsta analītisko domāšanu un problēmu risināšanu. Sāc ar GitHub konta izveidi un apgūsti pamata Git komandas (clone, commit, push, pull), lai varētu sekot koda izmaiņām un sadarboties ar citiem. Izvēlies valodu: frontenda izstrādei iemācies HTML, CSS, JavaScript, bet datu analīzei – Python ar Jupyter Notebook. Strādā VS Code, izmantojot paplašinājumus ESLint un Prettier koda kvalitātei. Lai nodrošinātu vienotu vidi, izmanto Docker konteinerus ar Python vai Node.js. Raksti vienību testus (Jest, pytest) un veic refaktoringu, lai kods būtu uzticams un skaidrs.`,
+    text: `Programmēšana palīdz attīstīt analītisko domāšanu un problēmu risināšanu. Sāc ar GitHub konta izveidi un pamata komandām (clone, commit, push, pull), lai vari sekot koda izmaiņām. Front-end izstrādei apgūsti HTML, CSS un JavaScript, bet datu analīzei – Python ar Jupyter Notebook. Strādāju VS Code, izmantojot ESLint un Prettier, lai kods būtu tīrs. Vienotu vidi nodrošinu ar Docker konteineriem (Python vai Node.js). Vienību testi (Jest, pytest) ļauj uzturēt koda kvalitāti un vieglāk veikt refaktoringu.`,
     imgSrc: image3,
     imgAlt: "Programmēšanas attēls",
   },
+
   {
     id: "productivity",
     title: "Produktivitāte un laika pārvaldība",
-    text: `Efektīvai laika plānošanai izmanto Pomodoro tehniku: 25 minūtes darba un 5 minūtes pauze. Lietotnes kā Forest vai Focus To-Do palīdz ievērot ritmu un saglabāt fokusu. Veido to-do sarakstus ar Trello vai Todoist, kur uzdevumus var sadalīt “To Do”, “Doing” un “Done”, pievienojot termiņus. Google Calendar vai Outlook nodrošina atgādinājumus par lekcijām, ieskaitēm un projektu termiņiem.`,
+    text: `Efektīvai laika plānošanai izmantoju Pomodoro tehniku – 25 minūšu darba cikls un 5 minūšu pauze. Aplikācijas Forest un Focus To-Do palīdz ievērot ritmu un saglabāt fokusu. Trello vai Todoist izmantoju, lai sadalītu uzdevumus kolonnās “To Do”, “Doing” un “Done”; termiņi un atgādinājumi Google Calendar vai Outlook nodrošina, ka nekas netiek palaists garām.`,
     imgSrc: image4,
     imgAlt: "Attēls par produktivitāti",
   },
+
   {
     id: "online-learning",
     title: "Tiešsaistes mācības un sadarbība",
-    text: `Attālinātajām studijām izvēlies piemērotu video sapulču platformu: Zoom nodrošina grupu telpas (Breakout Rooms) un ierakstīšanu, Teams integrējas ar Office 365 un ļauj koplietot dokumentus, bet Meet darbojas pārlūkā bez instalācijām. Reāllaika dokumentu sadarbībai izmanto Google Docs/Sheets/Slides – visi redz izmaiņas nekavējoties un var pievienot komentārus. Komunikācijai izmanto Slack vai Discord, kur tērzēt par tēmām, dalīties ar failiem un koplietot ekrānu.`,
+    text: `Tiešsaistes lekcijās visbiežāk iznāk izmantot Microsoft Teams – grupu sarakstes un ieraksti man ļauj atkārtot svarīgāko. Microsoft Teams arī noder Office 365 integrācijas dēļ, savukārt Google Meet darbojas tieši pārlūkā. Reāllaika dokumentu sadarbībai izmantoju Google Docs/Sheets/Slides ar komentāriem. Saziņai izvēlos Slack vai Discord – tērzēšana, failu koplietošana un ekrānšāviņu dalīšanās padara komandas darbu vieglāku.`,
     imgSrc: image1,
     imgAlt: "Attēls par tiešsaistes mācībām",
   },
+
   {
     id: "conclusion",
     title: "Kopsavilkums un ieteicamie resursi",
-    text: `Šajā ceļvedī apskatījām piecas svarīgas tēmas: mācību rīki (Google Docs, OneNote, Notion), programmēšana (GitHub, VS Code, Python), produktivitāte (Pomodoro, to-do saraksti, Google Calendar), attālinātas mācības (Zoom, Teams, Slack) un papildu resursi. Lai turpinātu attīstību, iesakām:
-
-YouTube: “Traversy Media” (web izstrāde), “The Net Ninja” (JS, Python). 
-
-Tiešsaistes kursi: Coursera (“CS50”), edX (MIT kursi). 
-
-
-Forumi: Stack Overflow, Reddit r/learnprogramming, Latvijas IT Discord kanāli.
-Izmanto šos resursus, lai paplašinātu zināšanas un efektīvi sadarboties.`,
+    text: `Šajā ceļvedī apskatījām piezīmju rīkus (Google Docs, OneNote, Notion), programmēšanu (GitHub, VS Code, Python), produktivitāti (Pomodoro, to-do sarakstus, Google Calendar), tiešsaistes mācības (Zoom, Teams, Slack/Discord) un papildu resursus.  
+      
+Lai turpinātu attīstīties, iesaku:
+- YouTube: “Traversy Media” (web izstrāde), “The Net Ninja” (JS, Python)  
+- Coursera: CS50  
+- edX: MIT kursi  
+- Forumi: Stack Overflow, Reddit r/learnprogramming, Latvijas IT Discord kopienas  
+  
+Izmanto šos avotus, lai paplašinātu zināšanas, uzdotu jautājumus un efektīvi sadarboties.`,
     imgSrc: image6,
     imgAlt: "Noslēguma attēls",
   },
