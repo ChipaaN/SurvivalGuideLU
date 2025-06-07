@@ -33,7 +33,7 @@ const Header = () => {
         <div className="container nav-container">
           {/* Logo */}
           <div>
-            <a href="#intro">
+            <a href="https://eztf.lu.lv/">
               <img
                 src={logoSrc}
                 alt="EZTF Logo"
